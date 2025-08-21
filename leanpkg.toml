@@ -1,0 +1,10 @@
+[package]
+name = "actinf_varsynth"
+version = "0.1.0"
+lean_version = "leanprover-community/lean4:stable"
+
+[dependencies]
+lean = {git = "https://github.com/leanprover-community/lean4", subdir = "lean", rev = "main"}
+
+[dev_dependencies]
+lean = {git = "https://github.com/leanprover-community/lean4", subdir = "lean", rev = "main"} 
