@@ -1,0 +1,30 @@
+File: src/stochastic_process_grundbegriffe.lean
+Timestamp: 2025-08-22T12:32:49.430170
+Runtime: 0.84s
+Success: False
+
+=== ERROR ===
+Exit code 1
+Stdout: src/stochastic_process_grundbegriffe.lean:1:0: error: unknown package 'measure_theory'
+src/stochastic_process_grundbegriffe.lean:4:5: error: unknown namespace 'measure_theory'
+src/stochastic_process_grundbegriffe.lean:8:33: error: unexpected token '*'; expected ')'
+src/stochastic_process_grundbegriffe.lean:13:30: error: unexpected token '*'; expected ')'
+src/stochastic_process_grundbegriffe.lean:18:35: error: unexpected token '*'; expected ')'
+src/stochastic_process_grundbegriffe.lean:23:26: error: unexpected token '*'; expected ')'
+src/stochastic_process_grundbegriffe.lean:27:28: error: unexpected token '*'; expected ')'
+src/stochastic_process_grundbegriffe.lean:31:32: error: unexpected token '*'; expected ')'
+src/stochastic_process_grundbegriffe.lean:34:20: error: unexpected token '*'; expected ')'
+src/stochastic_process_grundbegriffe.lean:46:47: error: invalid binder annotation, type is not a class instance
+  ?m.116
+use the command `set_option checkBinderAnnotations false` to disable the check
+src/stochastic_process_grundbegriffe.lean:50:24: error: unexpected token '|'; expected '}'
+src/stochastic_process_grundbegriffe.lean:56:79: error: unexpected token 'suffices'; expected '}'
+src/stochastic_process_grundbegriffe.lean:59:2: error: invalid 'end', insufficient scopes
+src/stochastic_process_grundbegriffe.lean:60:0: error: unexpected token '}'; expected command
+src/stochastic_process_grundbegriffe.lean:62:60: error: unknown identifier 'set.Icc'
+src/stochastic_process_grundbegriffe.lean:62:59: error: unknown constant 'sorryAx'
+src/stochastic_process_grundbegriffe.lean:63:2: error: 'is_probability_measure' is not a field of structure 'probability_space'
+src/stochastic_process_grundbegriffe.lean:63:0: error: unknown constant 'sorryAx'
+src/stochastic_process_grundbegriffe.lean:62:23: error: unknown constant 'sorryAx'
+
+Stderr: 

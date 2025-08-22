@@ -1,0 +1,33 @@
+File: src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean
+Timestamp: 2025-08-22T12:33:26.599425
+Runtime: 0.97s
+Success: False
+
+=== ERROR ===
+Exit code 1
+Stdout: src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:1:0: error: unknown package 'tactic'
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:9:7: error: unknown identifier 'linear_ordered_comm_ring'
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:9:0: error: unknown constant 'sorryAx'
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:14:21: error: expected token
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:18:17: error: unexpected token '-'; expected ':=', 'where' or '|'
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:25:21: error: expected token
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:44:0: error: invalid 'end', insufficient scopes
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:47:22: error: expected token
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:51:16: error: unexpected token '+'; expected ')'
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:55:0: error: invalid 'end', insufficient scopes
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:57:6: error: unexpected identifier; expected command
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:65:0: error: invalid 'end', insufficient scopes
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:67:6: error: unexpected identifier; expected command
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:72:0: error: invalid 'end', insufficient scopes
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:74:6: error: unexpected identifier; expected command
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:77:0: error: invalid 'end', insufficient scopes
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:79:6: error: unexpected identifier; expected command
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:94:0: error: invalid 'end', insufficient scopes
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:96:6: error: unexpected identifier; expected command
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:108:0: error: invalid 'end', insufficient scopes
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:110:6: error: unexpected identifier; expected command
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:135:0: error: invalid 'end', insufficient scopes
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:138:19: error: expected token
+src/maclane_birkhoff_survey_modern_algebra_sections_1.3.lean:189:0: error: invalid 'end', insufficient scopes
+
+Stderr: 

@@ -1,0 +1,23 @@
+File: src/simple_vector_proof.lean
+Timestamp: 2025-08-22T12:30:05.821427
+Runtime: 2.55s
+Success: False
+
+=== ERROR ===
+Exit code 1
+Stdout: src/simple_vector_proof.lean:24:35: warning: unused variable `t` [linter.unusedVariables]
+src/simple_vector_proof.lean:25:4: warning: unused variable `i` [linter.unusedVariables]
+src/simple_vector_proof.lean:42:4: warning: unused variable `i` [linter.unusedVariables]
+src/simple_vector_proof.lean:46:4: warning: unused variable `i` [linter.unusedVariables]
+src/simple_vector_proof.lean:51:4: warning: unused variable `i` [linter.unusedVariables]
+src/simple_vector_proof.lean:55:4: warning: unused variable `i` [linter.unusedVariables]
+"🎉 Simple Vector Langevin equation framework is working!"
+"✅ n-dimensional state spaces (currently 3D)"
+"✅ Vector operations: addition and scaling"
+"✅ Multi-dimensional evolution equations"
+"✅ Component-wise dynamics: dx_i/dt = -x_i + 0.1"
+"✅ All vector properties proven successfully!"
+""
+"🚀 Vector case complete! Ready for stochastic processes!"
+
+Stderr: unknown declaration 'main'

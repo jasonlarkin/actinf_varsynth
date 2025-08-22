@@ -4,52 +4,52 @@
 import Mathlib.Data.Real.Basic
 
 -- Basic types (same as working proof)
-def time := ℝ
-def state := ℝ
+def time := Rat
+def state := Rat
 
 -- Stochastic flow function (deterministic part)
-def stochastic_flow (x : ℝ) : ℝ := -x
+def stochastic_flow (x : Rat) : Rat := -x
 
 -- Stochastic noise function (simplified Wiener increment)
-def stochastic_noise (t : ℝ) : ℝ := 0.1
+def stochastic_noise (t : Rat) : Rat := 1/10
 
 -- Stochastic Langevin equation structure
 structure stochastic_langevin_equation :=
-  (flow : ℝ → ℝ)
-  (noise : ℝ → ℝ)
-  (evolution : ℝ → ℝ → ℝ)
+  (flow : Rat → Rat)
+  (noise : Rat → Rat)
+  (evolution : Rat → Rat → Rat)
 
 -- Create instance
-noncomputable def langevin_instance : stochastic_langevin_equation :=
+def langevin_instance : stochastic_langevin_equation :=
   { flow := stochastic_flow
     noise := stochastic_noise
     evolution := λ x t => stochastic_flow x + stochastic_noise t }
 
 -- Evolution equation: dx/dt = f(x) + ω(t)
-noncomputable def stochastic_evolution_equation (x : ℝ) (t : ℝ) : ℝ :=
+def stochastic_evolution_equation (x : Rat) (t : Rat) : Rat :=
   stochastic_flow x + stochastic_noise t
 
 -- Expected evolution (deterministic part)
-def expected_evolution (x : ℝ) : ℝ := stochastic_flow x
+def expected_evolution (x : Rat) : Rat := stochastic_flow x
 
 -- Variance of the noise
-def noise_variance : ℝ := 0.01  -- (0.1)²
+def noise_variance : Rat := 1/100  -- (1/10)²
 
 -- Basic properties we can prove
-theorem stochastic_flow_well_defined (x : ℝ) :
-  ∃ y : ℝ, y = stochastic_flow x :=
+theorem stochastic_flow_well_defined (x : Rat) :
+  ∃ y : Rat, y = stochastic_flow x :=
   ⟨stochastic_flow x, rfl⟩
 
-theorem stochastic_evolution_structure (x : ℝ) (t : ℝ) :
+theorem stochastic_evolution_structure (x : Rat) (t : Rat) :
   stochastic_evolution_equation x t = stochastic_flow x + stochastic_noise t :=
   rfl
 
-theorem expected_evolution_property (x : ℝ) :
+theorem expected_evolution_property (x : Rat) :
   expected_evolution x = -x :=
   rfl
 
 theorem variance_property : noise_variance > 0 :=
-  by { norm_num }
+  by decide
 
 -- Connection to basic Langevin framework
 theorem langevin_stochastic_process :
@@ -57,8 +57,8 @@ theorem langevin_stochastic_process :
   rfl
 
 -- Example calculation
-theorem stochastic_example_evolution (x : ℝ) (t : ℝ) :
-  stochastic_evolution_equation x t = -x + 0.1 :=
+theorem stochastic_example_evolution (x : Rat) (t : Rat) :
+  stochastic_evolution_equation x t = -x + (1/10) :=
   rfl
 
 -- Summary theorem

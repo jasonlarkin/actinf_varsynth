@@ -1,0 +1,11 @@
+File: src/simple_test.lean
+Timestamp: 2025-08-22T12:33:34.371151
+Runtime: 1.75s
+Success: True
+
+=== OUTPUT ===
+=== Lean Compilation Test ===
+2 + 3 = 5
+4 * 5 = 20
+5! = 120
+Compilation successful! 🎉

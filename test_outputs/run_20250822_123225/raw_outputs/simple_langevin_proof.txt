@@ -1,0 +1,28 @@
+File: src/simple_langevin_proof.lean
+Timestamp: 2025-08-22T12:32:37.901477
+Runtime: 2.41s
+Success: False
+
+=== ERROR ===
+Exit code 1
+Stdout: src/simple_langevin_proof.lean:23:42: error: failed to synthesize instance
+  Neg state
+src/simple_langevin_proof.lean:26:51: warning: unused variable `t` [linter.unusedVariables]
+src/simple_langevin_proof.lean:33:23: error: unsolved goals
+⊢ 0 < 1 / 5
+src/simple_langevin_proof.lean:37:2: error: failed to synthesize instance
+  HAdd state state ?m.2271
+src/simple_langevin_proof.lean:57:5: error: type mismatch
+  HEq.rfl
+has type
+  HEq ?m.2927 ?m.2927 : Prop
+but is expected to have type
+  noise_has_variance leq : Prop
+src/simple_langevin_proof.lean:61:31: error: failed to synthesize instance
+  HAdd state state ?m.3508
+src/simple_langevin_proof.lean:81:42: error: failed to synthesize instance
+  Neg state
+src/simple_langevin_proof.lean:86:31: error: failed to synthesize instance
+  HAdd state state ?m.6540
+
+Stderr: 

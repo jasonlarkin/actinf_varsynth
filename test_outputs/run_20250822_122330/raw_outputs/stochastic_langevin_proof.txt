@@ -1,0 +1,46 @@
+File: src/stochastic_langevin_proof.lean
+Timestamp: 2025-08-22T12:23:38.513586
+Runtime: 0.92s
+Success: False
+
+=== ERROR ===
+Exit code 1
+Stdout: src/stochastic_langevin_proof.lean:4:0: error: object file './.lake/packages/mathlib/.lake/build/lib/Mathlib/MeasureTheory/MeasurableSpace.olean' of module Mathlib.MeasureTheory.MeasurableSpace does not exist
+src/stochastic_langevin_proof.lean:13:12: error: unknown identifier 'ℝ'
+src/stochastic_langevin_proof.lean:13:12: error: unknown constant 'sorryAx'
+src/stochastic_langevin_proof.lean:14:13: error: unknown identifier 'ℝ'
+src/stochastic_langevin_proof.lean:14:13: error: unknown constant 'sorryAx'
+src/stochastic_langevin_proof.lean:15:20: error: unknown identifier 'ℝ'
+src/stochastic_langevin_proof.lean:15:20: error: unknown constant 'sorryAx'
+src/stochastic_langevin_proof.lean:18:34: error: unexpected token '-'; expected term
+src/stochastic_langevin_proof.lean:21:54: error: unexpected token 'if'; expected term
+src/stochastic_langevin_proof.lean:31:32: error: expected token
+src/stochastic_langevin_proof.lean:38:29: error: unknown tactic
+src/stochastic_langevin_proof.lean:41:88: warning: unused variable `ω` [linter.unusedVariables]
+src/stochastic_langevin_proof.lean:42:13: error: unexpected token '+'; expected command
+src/stochastic_langevin_proof.lean:45:78: warning: unused variable `t` [linter.unusedVariables]
+src/stochastic_langevin_proof.lean:49:61: warning: unused variable `x` [linter.unusedVariables]
+src/stochastic_langevin_proof.lean:49:69: warning: unused variable `t` [linter.unusedVariables]
+src/stochastic_langevin_proof.lean:54:2: error: expected token
+src/stochastic_langevin_proof.lean:58:42: error: expected token
+src/stochastic_langevin_proof.lean:62:38: error: expected token
+src/stochastic_langevin_proof.lean:66:15: error: expected token
+src/stochastic_langevin_proof.lean:73:50: error: unknown constant 'OfNat'
+src/stochastic_langevin_proof.lean:73:50: error: unknown constant 'sorryAx'
+src/stochastic_langevin_proof.lean:71:4: error: unknown constant 'sorryAx'
+src/stochastic_langevin_proof.lean:77:57: error: expected token
+src/stochastic_langevin_proof.lean:82:53: error: expected token
+src/stochastic_langevin_proof.lean:87:2: error: unknown identifier 'rfl'
+src/stochastic_langevin_proof.lean:87:2: error: unknown constant 'sorryAx'
+src/stochastic_langevin_proof.lean:86:8: error: (kernel) unknown constant 'sorryAx'
+src/stochastic_langevin_proof.lean:89:0: error: unknown constant 'String'
+src/stochastic_langevin_proof.lean:90:0: error: unknown constant 'String'
+src/stochastic_langevin_proof.lean:91:0: error: unknown constant 'String'
+src/stochastic_langevin_proof.lean:92:0: error: unknown constant 'String'
+src/stochastic_langevin_proof.lean:93:0: error: unknown constant 'String'
+src/stochastic_langevin_proof.lean:94:0: error: unknown constant 'String'
+src/stochastic_langevin_proof.lean:95:0: error: unknown constant 'String'
+src/stochastic_langevin_proof.lean:96:0: error: unknown constant 'String'
+src/stochastic_langevin_proof.lean:97:0: error: unknown constant 'String'
+
+Stderr: 

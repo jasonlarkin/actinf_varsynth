@@ -1,0 +1,422 @@
+{
+  "analysis_results": {
+    "metadata": {
+      "lakefile_content": "import Lake\nopen Lake DSL\n\npackage \u00abactinf_varsynth\u00bb where\n  -- add package configuration options here\n\nrequire mathlib from git \"https://github.com/leanprover-community/mathlib4.git\" @ \"v4.5.0\"\n\nlean_lib \u00abActinfVarsynth\u00bb where\n  -- add library configuration options here\n\n-- Add Langevin simulator executable\nlean_exe \u00ablangevin_simulator\u00bb where\n  root := `src.langevin_simulator\n  supportInterpreter := true\n",
+      "project_name": "actinf_varsynth",
+      "has_executable": true,
+      "executable_names": [
+        "langevin_simulator"
+      ],
+      "dependencies": [
+        "mathlib"
+      ],
+      "manifest": {
+        "version": 7,
+        "packagesDir": ".lake/packages",
+        "packages": [
+          {
+            "url": "https://github.com/leanprover/std4",
+            "type": "git",
+            "subDir": null,
+            "rev": "08ec2584b1892869e3a5f4122b029989bcb4ca79",
+            "name": "std",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "main",
+            "inherited": true,
+            "configFile": "lakefile.lean"
+          },
+          {
+            "url": "https://github.com/leanprover-community/quote4",
+            "type": "git",
+            "subDir": null,
+            "rev": "1c88406514a636d241903e2e288d21dc6d861e01",
+            "name": "Qq",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "master",
+            "inherited": true,
+            "configFile": "lakefile.lean"
+          },
+          {
+            "url": "https://github.com/leanprover-community/aesop",
+            "type": "git",
+            "subDir": null,
+            "rev": "cebd10ba6d22457e364ba03320cfd9fc7511e520",
+            "name": "aesop",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "master",
+            "inherited": true,
+            "configFile": "lakefile.lean"
+          },
+          {
+            "url": "https://github.com/leanprover-community/ProofWidgets4",
+            "type": "git",
+            "subDir": null,
+            "rev": "8dd18350791c85c0fc9adbd6254c94a81d260d35",
+            "name": "proofwidgets",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "v0.0.25",
+            "inherited": true,
+            "configFile": "lakefile.lean"
+          },
+          {
+            "url": "https://github.com/leanprover/lean4-cli",
+            "type": "git",
+            "subDir": null,
+            "rev": "a751d21d4b68c999accb6fc5d960538af26ad5ec",
+            "name": "Cli",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "main",
+            "inherited": true,
+            "configFile": "lakefile.lean"
+          },
+          {
+            "url": "https://github.com/leanprover-community/import-graph.git",
+            "type": "git",
+            "subDir": null,
+            "rev": "8079d2d1d0e073bde42eab159c24f4c2d0d3a871",
+            "name": "importGraph",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "main",
+            "inherited": true,
+            "configFile": "lakefile.lean"
+          },
+          {
+            "url": "https://github.com/leanprover-community/mathlib4.git",
+            "type": "git",
+            "subDir": null,
+            "rev": "feec58a7ee9185f92abddcf7631643b53181a7d3",
+            "name": "mathlib",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "v4.5.0",
+            "inherited": false,
+            "configFile": "lakefile.lean"
+          }
+        ],
+        "name": "actinf_varsynth",
+        "lakeDir": ".lake"
+      },
+      "package_count": 7,
+      "direct_dependencies": [
+        "mathlib"
+      ],
+      "lean_version": "leanprover/lean4:v4.5.0",
+      "readme_preview": "..."
+    },
+    "artifacts": {
+      "executables": [
+        {
+          "path": ".lake/build/bin/langevin_simulator",
+          "name": "langevin_simulator",
+          "size": 109854520,
+          "modified": "2025-08-22T12:19:58.938310",
+          "permissions": "775",
+          "extension": ""
+        }
+      ],
+      "libraries": [
+        {
+          "path": ".lake/build/lib/src/langevin_simulator.olean",
+          "name": "langevin_simulator.olean",
+          "size": 202400,
+          "modified": "2025-08-22T12:19:19.781180",
+          "permissions": "664",
+          "extension": ".olean"
+        },
+        {
+          "path": ".lake/build/lib/src/langevin_simulator.ilean",
+          "name": "langevin_simulator.ilean",
+          "size": 2075,
+          "modified": "2025-08-22T12:19:19.764180",
+          "permissions": "664",
+          "extension": ".ilean"
+        }
+      ],
+      "intermediate_files": [
+        {
+          "path": ".lake/build/ir/src/langevin_simulator.c.o",
+          "name": "langevin_simulator.c.o",
+          "size": 35520,
+          "modified": "2025-08-22T12:19:20.585183",
+          "permissions": "664",
+          "extension": ".o"
+        },
+        {
+          "path": ".lake/build/ir/src/langevin_simulator.c",
+          "name": "langevin_simulator.c",
+          "size": 59781,
+          "modified": "2025-08-22T12:19:19.787180",
+          "permissions": "664",
+          "extension": ".c"
+        }
+      ],
+      "source_files": [
+        {
+          "path": "src/langevin_simulator.lean",
+          "name": "langevin_simulator.lean",
+          "size": 2742,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/advanced_langevin_proof.lean",
+          "name": "advanced_langevin_proof.lean",
+          "size": 5847,
+          "modified": "2025-08-21T09:28:55.187605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/simple_vector_proof.lean",
+          "name": "simple_vector_proof.lean",
+          "size": 2435,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/vector_langevin_proof.lean",
+          "name": "vector_langevin_proof.lean",
+          "size": 3833,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/stochastic_langevin_proof.lean",
+          "name": "stochastic_langevin_proof.lean",
+          "size": 3902,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/biological_equations.lean",
+          "name": "biological_equations.lean",
+          "size": 6281,
+          "modified": "2025-08-21T09:28:55.187605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/working_proof.lean",
+          "name": "working_proof.lean",
+          "size": 1211,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/simple_test.lean",
+          "name": "simple_test.lean",
+          "size": 783,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/simple_langevin_proof.lean",
+          "name": "simple_langevin_proof.lean",
+          "size": 4272,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/variational_free_energy_simple.lean",
+          "name": "variational_free_energy_simple.lean",
+          "size": 4269,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/stochastic_langevin_working.lean",
+          "name": "stochastic_langevin_working.lean",
+          "size": 2340,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/variational_free_energy.lean",
+          "name": "variational_free_energy.lean",
+          "size": 5543,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        },
+        {
+          "path": "src/minimal_proof.lean",
+          "name": "minimal_proof.lean",
+          "size": 2305,
+          "modified": "2025-08-21T09:28:55.188605",
+          "permissions": "644",
+          "extension": ".lean"
+        }
+      ],
+      "total_size": 110200215,
+      "file_count": 26
+    },
+    "dependencies": {
+      "packages": [
+        {
+          "name": "aesop",
+          "path": "packages/aesop",
+          "size": 66331896,
+          "file_count": 1018,
+          "lean_files": 165,
+          "subdirectories": 67
+        },
+        {
+          "name": "std",
+          "path": "packages/std",
+          "size": 172126770,
+          "file_count": 2415,
+          "lean_files": 269,
+          "subdirectories": 166
+        },
+        {
+          "name": "proofwidgets",
+          "path": "packages/proofwidgets",
+          "size": 45383507,
+          "file_count": 325,
+          "lean_files": 30,
+          "subdirectories": 47
+        },
+        {
+          "name": "importGraph",
+          "path": "packages/importGraph",
+          "size": 1570582,
+          "file_count": 63,
+          "lean_files": 9,
+          "subdirectories": 28
+        },
+        {
+          "name": "Cli",
+          "path": "packages/Cli",
+          "size": 403918,
+          "file_count": 40,
+          "lean_files": 6,
+          "subdirectories": 21
+        },
+        {
+          "name": "Qq",
+          "path": "packages/Qq",
+          "size": 14818521,
+          "file_count": 170,
+          "lean_files": 26,
+          "subdirectories": 30
+        },
+        {
+          "name": "mathlib",
+          "path": "packages/mathlib",
+          "size": 4335841070,
+          "file_count": 32453,
+          "lean_files": 4102,
+          "subdirectories": 1682
+        }
+      ],
+      "total_package_size": 4636476264,
+      "largest_packages": [
+        {
+          "name": "mathlib",
+          "path": "packages/mathlib",
+          "size": 4335841070,
+          "file_count": 32453,
+          "lean_files": 4102,
+          "subdirectories": 1682
+        },
+        {
+          "name": "std",
+          "path": "packages/std",
+          "size": 172126770,
+          "file_count": 2415,
+          "lean_files": 269,
+          "subdirectories": 166
+        },
+        {
+          "name": "aesop",
+          "path": "packages/aesop",
+          "size": 66331896,
+          "file_count": 1018,
+          "lean_files": 165,
+          "subdirectories": 67
+        },
+        {
+          "name": "proofwidgets",
+          "path": "packages/proofwidgets",
+          "size": 45383507,
+          "file_count": 325,
+          "lean_files": 30,
+          "subdirectories": 47
+        },
+        {
+          "name": "Qq",
+          "path": "packages/Qq",
+          "size": 14818521,
+          "file_count": 170,
+          "lean_files": 26,
+          "subdirectories": 30
+        }
+      ],
+      "package_file_counts": {
+        "aesop": 1018,
+        "std": 2415,
+        "proofwidgets": 325,
+        "importGraph": 63,
+        "Cli": 40,
+        "Qq": 170,
+        "mathlib": 32453
+      }
+    },
+    "cache": {
+      "olean_file": {
+        "path": ".lake/lakefile.olean",
+        "name": "lakefile.olean",
+        "size": 72904,
+        "modified": "2025-08-22T12:16:41.490615",
+        "permissions": "664",
+        "extension": ".olean"
+      },
+      "trace_data": {
+        "platform": "linux-64",
+        "options": {},
+        "leanHash": "1a3021f98e55a274217b3bbf92b2d449bae843c3",
+        "configHash": "9059216282666548193"
+      },
+      "platform": "linux-64",
+      "lean_hash": "1a3021f98e55a274217b3bbf92b2d449bae843c3",
+      "config_hash": "9059216282666548193",
+      "trace_file": {
+        "path": ".lake/lakefile.olean.trace",
+        "name": "lakefile.olean.trace",
+        "size": 136,
+        "modified": "2025-08-22T12:16:41.491615",
+        "permissions": "664",
+        "extension": ".trace"
+      },
+      "lock_file": {
+        "path": ".lake/lakefile.olean.lock",
+        "name": "lakefile.olean.lock",
+        "size": 0,
+        "modified": "2025-08-22T12:16:41.195614",
+        "permissions": "664",
+        "extension": ".lock"
+      },
+      "lock_content": "",
+      "is_locked": false
+    },
+    "status": {
+      "build_health": "good",
+      "warnings": [],
+      "errors": [],
+      "missing_components": [],
+      "optimization_suggestions": [
+        "Consider reviewing large dependency 'mathlib' (.1f)"
+      ]
+    }
+  },
+  "report": "================================================================================\nLEAN 4 LAKE BUILD ANALYSIS REPORT\n================================================================================\nGenerated: 2025-08-22 12:25:14\nProject: /home/trim/Documents/GitHub/actinf_varsynth\n\n\ud83d\udccb PROJECT OVERVIEW\n----------------------------------------\nProject Name: actinf_varsynth\nLean Version: leanprover/lean4:v4.5.0\nHas Executables: True\nExecutables: langevin_simulator\nDirect Dependencies: 1\n\n\ud83c\udfd7\ufe0f  BUILD STATUS\n----------------------------------------\nHealth: \ud83d\udfe1 GOOD\nOptimization Suggestions:\n  \ud83d\udca1 Consider reviewing large dependency 'mathlib' (.1f)\n\n\ud83d\udd28 BUILD ARTIFACTS\n----------------------------------------\nTotal Files: 26\nTotal Size: .1f\nExecutables: 1\n  \u2022 langevin_simulator (.1f)\nLibraries: 2\nSource Files: 13\n\n\ud83d\udce6 DEPENDENCIES\n----------------------------------------\nTotal Packages: 7\nTotal Dependency Size: .1f\nLargest Dependencies:\n  \u2022 mathlib: .1f (32453 files)\n  \u2022 std: .1f (2415 files)\n  \u2022 aesop: .1f (1018 files)\n\n\u2699\ufe0f  CACHE & CONFIGURATION\n----------------------------------------\nPlatform: linux-64\nLean Hash: 1a3021f98e55...\nBuild Lock: Clear\n",
+  "timestamp": "2025-08-22T12:25:14.623478"
+}

@@ -1,0 +1,45 @@
+File: src/simple_langevin_proof.lean
+Timestamp: 2025-08-22T12:23:34.743409
+Runtime: 1.53s
+Success: False
+
+=== ERROR ===
+Exit code 1
+Stdout: src/simple_langevin_proof.lean:23:42: error: failed to synthesize instance
+  Neg state
+src/simple_langevin_proof.lean:26:49: warning: unused variable `t` [linter.unusedVariables]
+src/simple_langevin_proof.lean:33:37: error: unsolved goals
+⊢ 0 < 0.2
+src/simple_langevin_proof.lean:29:4: error: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivisionRingReal', and it does not have executable code
+src/simple_langevin_proof.lean:37:2: error: failed to synthesize instance
+  HAdd state state ?m.2050
+src/simple_langevin_proof.lean:46:0: error: unknown identifier 'begin'
+src/simple_langevin_proof.lean:48:16: error: unexpected token ','; expected command
+src/simple_langevin_proof.lean:50:0: error: invalid 'end', insufficient scopes
+src/simple_langevin_proof.lean:61:0: error: unknown identifier 'begin'
+src/simple_langevin_proof.lean:63:23: error: unexpected token ','; expected command
+src/simple_langevin_proof.lean:67:0: error: invalid 'end', insufficient scopes
+src/simple_langevin_proof.lean:71:31: error: failed to synthesize instance
+  HAdd state state ?m.3288
+src/simple_langevin_proof.lean:72:0: error: unknown identifier 'begin'
+src/simple_langevin_proof.lean:73:23: error: unexpected token ','; expected command
+src/simple_langevin_proof.lean:75:0: error: invalid 'end', insufficient scopes
+src/simple_langevin_proof.lean:80:0: error: unknown identifier 'begin'
+src/simple_langevin_proof.lean:81:21: error: unexpected token ','; expected command
+src/simple_langevin_proof.lean:84:0: error: invalid 'end', insufficient scopes
+src/simple_langevin_proof.lean:89:0: error: unknown identifier 'begin'
+src/simple_langevin_proof.lean:91:0: error: invalid 'end', insufficient scopes
+src/simple_langevin_proof.lean:96:0: error: unknown identifier 'begin'
+src/simple_langevin_proof.lean:98:0: error: invalid 'end', insufficient scopes
+src/simple_langevin_proof.lean:102:42: error: failed to synthesize instance
+  Neg state
+src/simple_langevin_proof.lean:103:0: error: unknown identifier 'begin'
+src/simple_langevin_proof.lean:104:23: error: unexpected token ','; expected command
+src/simple_langevin_proof.lean:111:0: error: invalid 'end', insufficient scopes
+src/simple_langevin_proof.lean:115:31: error: failed to synthesize instance
+  HAdd state state ?m.5637
+src/simple_langevin_proof.lean:117:0: error: unknown identifier 'begin'
+src/simple_langevin_proof.lean:118:7: error: unexpected token ','; expected command
+src/simple_langevin_proof.lean:121:0: error: invalid 'end', insufficient scopes
+
+Stderr: 

@@ -1,0 +1,8 @@
+{
+  "file": "src/vector_langevin_proof.lean",
+  "success": false,
+  "output": "",
+  "error": "Exit code 1\nStdout: src/vector_langevin_proof.lean:39:4: warning: unused variable `t` [linter.unusedVariables]\nsrc/vector_langevin_proof.lean:39:6: warning: unused variable `i` [linter.unusedVariables]\nsrc/vector_langevin_proof.lean:46:23: error: unsolved goals\n\u22a2 0 < 1 / 5\nsrc/vector_langevin_proof.lean:69:4: warning: unused variable `i` [linter.unusedVariables]\nsrc/vector_langevin_proof.lean:80:10: warning: unused variable `i` [linter.unusedVariables]\nsrc/vector_langevin_proof.lean:85:4: warning: unused variable `i` [linter.unusedVariables]\n\"\ud83c\udf89 Vector Langevin equation framework is working!\"\n\"\u2705 n-dimensional state spaces (currently 3D)\"\n\"\u2705 Vector operations (addition, scaling)\"\n\"\u2705 Multi-dimensional evolution equations\"\n\"\u2705 All vector properties proven successfully!\"\n\"\"\n\"\ud83d\ude80 Ready for next phase: Stochastic process integration!\"\n\nStderr: ",
+  "runtime": 2.3398494720458984,
+  "timestamp": "2025-08-22T12:32:55.749192"
+}

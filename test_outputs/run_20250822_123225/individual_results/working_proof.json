@@ -1,0 +1,8 @@
+{
+  "file": "src/working_proof.lean",
+  "success": false,
+  "output": "",
+  "error": "Exit code 1\nStdout: src/working_proof.lean:14:18: warning: unused variable `t` [linter.unusedVariables]\n\"\ud83c\udf89 Langevin equation framework is working!\"\n\"\u2705 Basic structure: dx/dt = f(x) + \u03c9(t)\"\n\"\u2705 Flow function: f(x) = -x (exponential decay)\"\n\"\u2705 Noise function: \u03c9(t) = 0.1 (constant)\"\n\"\u2705 Evolution equation: dx/dt = -x + 0.1\"\n\"\u2705 All properties proven successfully!\"\n\nStderr: unknown declaration 'main'\n",
+  "runtime": 2.32220721244812,
+  "timestamp": "2025-08-22T12:32:58.089127"
+}

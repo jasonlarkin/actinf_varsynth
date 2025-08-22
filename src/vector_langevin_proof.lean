@@ -7,14 +7,14 @@ import Mathlib.Algebra.Ring.Basic
 
 -- Extend to vector case (n-dimensional states)
 def dimension := 3  -- Start with 3D, can be made generic later
-def vector_state := Fin dimension → ℝ
-def vector_time := ℝ
+def vector_state := Fin dimension → Rat
+def vector_time := Rat
 
 -- Vector operations
 def vector_add (v1 v2 : vector_state) : vector_state :=
   λ i => v1 i + v2 i
 
-def vector_scale (c : ℝ) (v : vector_state) : vector_state :=
+def vector_scale (c : Rat) (v : vector_state) : vector_state :=
   λ i => c * v i
 
 -- Vector flow function
@@ -27,23 +27,23 @@ def vector_noise_function := vector_time → vector_state
 structure vector_langevin_equation :=
   (flow : vector_flow_function)
   (noise : vector_noise_function)
-  (variance : ℝ)
+  (variance : Rat)
   (variance_positive : variance > 0)
 
 -- Example: Linear vector flow (exponential decay in each dimension)
 def linear_vector_flow : vector_flow_function :=
-  λ x => λ i => -x i
+  λ x i => -x i
 
 -- Example: Simple noise (constant in each dimension)
-def simple_vector_noise (c : ℝ) : vector_noise_function :=
-  λ t => λ i => c
+def simple_vector_noise (c : Rat) : vector_noise_function :=
+  λ t i => c
 
 -- Create a vector example
 def vector_example : vector_langevin_equation :=
 { flow := linear_vector_flow,
-  noise := simple_vector_noise 0.1,
-  variance := 0.2,
-  variance_positive := by { exact (by { norm_num } : 0.2 > 0) } }
+  noise := simple_vector_noise (1/10),
+  variance := 1/5,
+  variance_positive := by norm_num }
 
 -- Vector evolution equation
 def vector_evolution_equation (leq : vector_langevin_equation) (x : vector_state) (t : vector_time) : vector_state :=
@@ -81,7 +81,7 @@ theorem vector_evolution_preserves_structure (leq : vector_langevin_equation) (x
 
 -- Example calculation: Vector evolution for our example
 theorem vector_example_evolution_calculation (x : vector_state) (t : vector_time) :
-  ∀ i : Fin dimension, (vector_evolution_equation vector_example x t) i = -x i + 0.1 :=
+  ∀ i : Fin dimension, (vector_evolution_equation vector_example x t) i = -x i + (1/10) :=
   λ i => rfl
 
 -- Summary theorem

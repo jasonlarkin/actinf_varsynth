@@ -1,0 +1,36 @@
+File: src/advanced_langevin_proof.lean
+Timestamp: 2025-08-22T12:32:25.054202
+Runtime: 2.47s
+Success: False
+
+=== ERROR ===
+Exit code 1
+Stdout: src/advanced_langevin_proof.lean:15:5: error: unexpected token ','; expected '↦', '=>'
+src/advanced_langevin_proof.lean:18:5: error: unexpected token ','; expected '↦', '=>'
+src/advanced_langevin_proof.lean:22:2: error: expected token
+src/advanced_langevin_proof.lean:39:5: error: unexpected token ','; expected '↦', '=>'
+src/advanced_langevin_proof.lean:43:5: error: unexpected token ','; expected '↦', '=>'
+src/advanced_langevin_proof.lean:50:23: error: unsolved goals
+⊢ 0 < 1 / 5
+src/advanced_langevin_proof.lean:73:9: error: type mismatch
+  rfl
+has type
+  vector_evolution_equation leq x t i = vector_evolution_equation leq x t i : Prop
+but is expected to have type
+  vector_evolution_equation leq x t i =
+    vector_langevin_equation.flow leq x i + vector_langevin_equation.noise leq t i : Prop
+src/advanced_langevin_proof.lean:77:28: error: unexpected token ','; expected '↦', '=>'
+src/advanced_langevin_proof.lean:95:9: error: type mismatch
+  rfl
+has type
+  vector_evolution_equation vector_example x t i = vector_evolution_equation vector_example x t i : Prop
+but is expected to have type
+  vector_evolution_equation vector_example x t i = -x i + simple_vector_noise (1 / 10) t i : Prop
+src/advanced_langevin_proof.lean:100:2: error: type mismatch
+  rfl
+has type
+  linear_vector_flow x = linear_vector_flow x : Prop
+but is expected to have type
+  linear_vector_flow x = vector_scale (-1) x : Prop
+
+Stderr: 

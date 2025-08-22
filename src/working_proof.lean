@@ -3,40 +3,42 @@
 
 import Mathlib.Data.Real.Basic
 
--- Basic types
-def time := ℝ
-def state := ℝ
+-- Basic types using Rat for computability
+def time := Rat
+def state := Rat
 
 -- Simple flow function
-def simple_flow (x : ℝ) : ℝ := -x
+def simple_flow (x : Rat) : Rat := -x
 
 -- Simple noise function
-def simple_noise (t : ℝ) : ℝ := 0.1
+def simple_noise (t : Rat) : Rat := 1/10
 
 -- Evolution equation: dx/dt = f(x) + ω(t)
-noncomputable def evolution_equation (x : ℝ) (t : ℝ) : ℝ :=
+def evolution_equation (x : Rat) (t : Rat) : Rat :=
   simple_flow x + simple_noise t
 
 -- Basic properties we can prove
-theorem flow_well_defined (x : ℝ) :
-  ∃ y : ℝ, y = simple_flow x :=
+theorem flow_well_defined (x : Rat) :
+  ∃ y : Rat, y = simple_flow x :=
   ⟨simple_flow x, rfl⟩
 
-theorem evolution_structure (x : ℝ) (t : ℝ) :
+theorem evolution_structure (x : Rat) (t : Rat) :
   evolution_equation x t = simple_flow x + simple_noise t :=
   rfl
 
-theorem example_calculation (x : ℝ) (t : ℝ) :
-  evolution_equation x t = -x + 0.1 :=
+theorem example_calculation (x : Rat) (t : Rat) :
+  evolution_equation x t = -x + (1/10) :=
   rfl
 
 -- Summary theorem
-theorem summary : true :=
-  rfl
+theorem summary : True :=
+  trivial
 
-#eval "🎉 Langevin equation framework is working!"
-#eval "✅ Basic structure: dx/dt = f(x) + ω(t)"
-#eval "✅ Flow function: f(x) = -x (exponential decay)"
-#eval "✅ Noise function: ω(t) = 0.1 (constant)"
-#eval "✅ Evolution equation: dx/dt = -x + 0.1"
-#eval "✅ All properties proven successfully!" 
+-- Main function for execution
+def main : IO Unit := do
+  IO.println "🎉 Langevin equation framework is working!"
+  IO.println "✅ Basic structure: dx/dt = f(x) + ω(t)"
+  IO.println "✅ Flow function: f(x) = -x (exponential decay)"
+  IO.println "✅ Noise function: ω(t) = 0.1 (constant)"
+  IO.println "✅ Evolution equation: dx/dt = -x + 0.1"
+  IO.println "✅ All properties proven successfully!" 

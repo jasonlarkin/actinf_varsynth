@@ -1,0 +1,8 @@
+{
+  "file": "src/biological_equations.lean",
+  "success": false,
+  "output": "",
+  "error": "Exit code 1\nStdout: src/biological_equations.lean:31:8: error: expected token\nsrc/biological_equations.lean:37:4: error: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivisionRingReal', and it does not have executable code\nsrc/biological_equations.lean:47:4: error: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivisionRingReal', and it does not have executable code\nsrc/biological_equations.lean:70:4: error: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivisionRingReal', and it does not have executable code\nsrc/biological_equations.lean:94:56: warning: unused variable `dt` [linter.unusedVariables]\nsrc/biological_equations.lean:114:8: error: expected token\nsrc/biological_equations.lean:125:2: error: failed to synthesize instance\n  HasEquiv \u211d\nsrc/biological_equations.lean:129:8: warning: declaration uses 'sorry'\n\"\ud83e\uddec Biological Equations Framework Implemented!\"\n\"\u2705 Price Equation: \u0394z\u0304 = Cov(w,z) + E[w\u0394z]\"\n\"\u2705 Replicator Equation: dx\u1d62/dt = x\u1d62(f\u1d62 - f\u0304)\"\n\"\u2705 Multi-level selection components\"\n\"\u2705 Population free energy functional\"\n\"\u2705 Variational synthesis with biological dynamics\"\n\"\u2705 Integration with existing Langevin framework\"\n\"\u2705 Framework ready for evolutionary biology applications!\"\n\nStderr: ",
+  "runtime": 1.531770944595337,
+  "timestamp": "2025-08-22T12:23:30.810357"
+}

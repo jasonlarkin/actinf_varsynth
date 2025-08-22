@@ -1,0 +1,40 @@
+File: src/variational_free_energy.lean
+Timestamp: 2025-08-22T12:23:41.146810
+Runtime: 0.93s
+Success: False
+
+=== ERROR ===
+Exit code 1
+Stdout: src/variational_free_energy.lean:5:0: error: object file './.lake/packages/mathlib/.lake/build/lib/Mathlib/Data/Real/Log.olean' of module Mathlib.Data.Real.Log does not exist
+src/variational_free_energy.lean:11:12: error: unknown identifier 'ℝ'
+src/variational_free_energy.lean:11:12: error: unknown constant 'sorryAx'
+src/variational_free_energy.lean:12:13: error: unknown identifier 'ℝ'
+src/variational_free_energy.lean:12:13: error: unknown constant 'sorryAx'
+src/variational_free_energy.lean:13:14: error: unknown identifier 'ℝ'
+src/variational_free_energy.lean:13:14: error: unknown constant 'sorryAx'
+src/variational_free_energy.lean:14:19: error: unknown identifier 'ℝ'
+src/variational_free_energy.lean:14:19: error: unknown constant 'sorryAx'
+src/variational_free_energy.lean:25:22: error: unexpected token ','; expected ']'
+src/variational_free_energy.lean:34:25: error: unexpected token '-'; expected ')' or term
+src/variational_free_energy.lean:41:12: error: unexpected token '-'; expected ')' or term
+src/variational_free_energy.lean:48:22: error: unexpected token ','; expected ']'
+src/variational_free_energy.lean:56:22: error: unexpected token ','; expected ']'
+src/variational_free_energy.lean:67:22: error: unexpected token ','; expected ']'
+src/variational_free_energy.lean:75:9: error: unexpected token '+'; expected ')', ',' or ':'
+src/variational_free_energy.lean:81:13: error: unexpected token '-'; expected term
+src/variational_free_energy.lean:90:32: error: expected token
+src/variational_free_energy.lean:95:22: error: unexpected token ','; expected ']'
+src/variational_free_energy.lean:106:15: error: expected ';' or line break
+src/variational_free_energy.lean:114:2: error: unknown identifier 'rfl'
+src/variational_free_energy.lean:114:2: error: unknown constant 'sorryAx'
+src/variational_free_energy.lean:113:8: error: (kernel) unknown constant 'sorryAx'
+src/variational_free_energy.lean:116:0: error: unknown constant 'String'
+src/variational_free_energy.lean:117:0: error: unknown constant 'String'
+src/variational_free_energy.lean:118:0: error: unknown constant 'String'
+src/variational_free_energy.lean:119:0: error: unknown constant 'String'
+src/variational_free_energy.lean:120:0: error: unknown constant 'String'
+src/variational_free_energy.lean:121:0: error: unknown constant 'String'
+src/variational_free_energy.lean:122:0: error: unknown constant 'String'
+src/variational_free_energy.lean:123:0: error: unknown constant 'String'
+
+Stderr: 

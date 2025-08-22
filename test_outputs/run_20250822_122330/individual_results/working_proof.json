@@ -1,0 +1,8 @@
+{
+  "file": "src/working_proof.lean",
+  "success": false,
+  "output": "",
+  "error": "Exit code 1\nStdout: src/working_proof.lean:14:4: error: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivisionRingReal', and it does not have executable code\n\"\ud83c\udf89 Langevin equation framework is working!\"\n\"\u2705 Basic structure: dx/dt = f(x) + \u03c9(t)\"\n\"\u2705 Flow function: f(x) = -x (exponential decay)\"\n\"\u2705 Noise function: \u03c9(t) = 0.1 (constant)\"\n\"\u2705 Evolution equation: dx/dt = -x + 0.1\"\n\"\u2705 All properties proven successfully!\"\n\nStderr: ",
+  "runtime": 1.6446630954742432,
+  "timestamp": "2025-08-22T12:23:45.798655"
+}

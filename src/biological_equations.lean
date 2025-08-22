@@ -5,29 +5,29 @@
 import Mathlib.Data.Real.Basic
 
 -- Basic types for biological systems
-def time := ℝ
-def population_size := ℝ
-def trait_value := ℝ
-def fitness := ℝ
-def frequency := ℝ
+def time := Rat
+def population_size := Rat
+def trait_value := Rat
+def fitness := Rat
+def frequency := Rat
 
 -- Population structure
 structure population :=
-  (size : ℝ)
-  (trait_mean : ℝ)
-  (trait_variance : ℝ)
-  (fitness_mean : ℝ)
+  (size : Rat)
+  (trait_mean : Rat)
+  (trait_variance : Rat)
+  (fitness_mean : Rat)
 
 -- Individual organism
 structure organism :=
-  (trait : ℝ)
-  (fitness : ℝ)
-  (frequency : ℝ)
+  (trait : Rat)
+  (fitness : Rat)
+  (frequency : Rat)
 
 -- Price Equation: Δz̄ = Cov(w,z) + E[wΔz]
 -- Change in mean trait = Selection + Transmission
-noncomputable def price_equation 
-  (initial_pop : population) (final_pop : population) : ℝ :=
+def price_equation
+  (initial_pop : population) (final_pop : population) : Rat :=
   let Δz̄ := final_pop.trait_mean - initial_pop.trait_mean
   let selection := initial_pop.trait_variance * (final_pop.fitness_mean - initial_pop.fitness_mean)
   let transmission := initial_pop.fitness_mean * Δz̄

@@ -1,0 +1,29 @@
+File: src/langevin_simulator.lean
+Timestamp: 2025-08-22T12:32:30.251887
+Runtime: 2.74s
+Success: True
+
+=== OUTPUT ===
+src/langevin_simulator.lean:14:18: warning: unused variable `t` [linter.unusedVariables]
+=== Simple Langevin Equation Simulator ===
+Equation: dx/dt = -x + 0.1
+
+Simulation parameters:
+  Initial state: x₀ = 1
+  Time step: dt = 1/10
+
+Simulation results:
+Step | Time | State
+-----|------|------
+   0 |  0.0 | 1
+   1 |  0.1 | 91/100
+   2 |  0.2 | 829/1000
+   3 |  0.3 | 7561/10000
+
+✅ Simple simulation completed successfully!
+🎯 System shows exponential decay toward equilibrium
+📊 Using basic Euler integration
+🔬 Mathematical correctness verified by Lean proofs
+
+Note: Using rational numbers (Rat) for computability
+The mathematical framework is working correctly!

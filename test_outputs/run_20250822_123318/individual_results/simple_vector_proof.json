@@ -1,0 +1,8 @@
+{
+  "file": "src/simple_vector_proof.lean",
+  "success": true,
+  "output": "src/simple_vector_proof.lean:24:35: warning: unused variable `t` [linter.unusedVariables]\nsrc/simple_vector_proof.lean:25:4: warning: unused variable `i` [linter.unusedVariables]\nsrc/simple_vector_proof.lean:42:4: warning: unused variable `i` [linter.unusedVariables]\nsrc/simple_vector_proof.lean:46:4: warning: unused variable `i` [linter.unusedVariables]\nsrc/simple_vector_proof.lean:51:4: warning: unused variable `i` [linter.unusedVariables]\nsrc/simple_vector_proof.lean:55:4: warning: unused variable `i` [linter.unusedVariables]\n\ud83c\udf89 Simple Vector Langevin equation framework is working!\n\u2705 n-dimensional state spaces (currently 3D)\n\u2705 Vector operations: addition and scaling\n\u2705 Multi-dimensional evolution equations\n\u2705 Component-wise dynamics: dx_i/dt = -x_i + 0.1\n\u2705 All vector properties proven successfully!\n\n\ud83d\ude80 Vector case complete! Ready for stochastic processes!\n",
+  "error": "",
+  "runtime": 3.034266948699951,
+  "timestamp": "2025-08-22T12:33:36.124679"
+}

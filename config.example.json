@@ -1,0 +1,14 @@
+{
+  "output_dir": "./proof_outputs",
+  "src_dir": "src",
+  "lake_cmd": "lake",
+  "verbose": true,
+  "timeout": 300,
+  "exclude_files": [
+    "*.tmp.lean",
+    "*backup*"
+  ],
+  "include_files": [
+    "*.lean"
+  ]
+}
